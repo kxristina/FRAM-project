@@ -265,7 +265,102 @@ body {
     font-weight: 400;
 
     color: #0B0A08B3;
-  }
+}
+
+
+  /* POPULAR PRODUCE */
+
+.popular-produce {
+    min-height: 100vh;
+    background: #FFFFFF;
+
+    padding: 90px 0px 90px 45px;
+    gap: 45px;
+}
+
+.produce-title {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    margin-bottom: 50px;
+}
+
+.produce-options {
+    display: flex;
+
+    gap: 25px;
+}
+
+.produce-card {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.produce-image-wrapper {
+    position: relative;
+
+    overflow: hidden;
+}
+
+.produce-image {
+    width: 100%;
+    height: 432px;
+
+    object-fit: cover;
+
+    border-radius: 16px;
+    display: block;
+}
+
+.basket-button {
+    position: absolute;
+
+    right: 15px;
+    bottom: 15px;
+
+    border: none;
+    border-radius: 44px;
+
+    background: #0B0A08;
+    color: #FFFFFF;
+
+    padding: 10px 16px;
+    gap: 10px;
+
+    font-size: 16px;
+}
+
+.produce-info {
+    padding: 15px 10px;
+}
+
+.produce-row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    margin-bottom: 10px;
+}
+
+.produce-row h4 {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.produce-row span {
+    font-size: 24px;
+    font-weight: 400;
+}
+
+.produce-info p {
+    font-size: 20px;
+    font-weight: 400;
+
+    color: #0B0A08CC;
+}
+
 
 
 
@@ -359,7 +454,42 @@ body {
         padding: 0px;
     }
 
-  
+
+    /* POPULAR PRODUCE */
+
+
+
+    .produce-options {
+        overflow-x: auto;
+        display: flex;
+
+        gap: 20px;
+        padding-bottom: 20px;
+
+        scroll-behavior: smooth;
+    }
+
+    .produce-options::-webkit-scrollbar {
+        display: none;
+    }
+
+    .produce-card {
+        min-width: 320px;
+
+        flex-shrink: 0;
+    }
+
+    .produce-title {
+        font-size: 24px;
+    }
+    .produce-row h4 {
+        font-size: 20px;
+    }
+    
+    .produce-row span {
+        font-size: 20px;
+    }
+
 
 
 }
