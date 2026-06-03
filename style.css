@@ -362,6 +362,97 @@ body {
 }
 
 
+/* NEWSLETTER */
+
+
+.newsletter-section {
+    background: #DC4131;
+
+    padding: 40px 0px 80px 30px;
+}
+
+.newsletter-logo {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 48px;
+    font-weight: 300;
+    font-style: light;
+
+    color: #FFFFFF;
+
+    margin-bottom: 15px;
+}
+
+.newsletter-divider {
+    border: none;
+    height: 1px;
+
+    background: #FFFFFF;
+
+    margin-bottom: 60px;
+}
+
+.newsletter-content {
+    max-width: 460px;
+    margin-left: 20px;
+}
+
+.newsletter-title {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    margin-bottom: 30px;
+}
+
+.newsletter-text {
+    font-family: "Frank Ruhl Libre", serif;
+    font-size: 24px;
+    font-weight: 300;
+    font-style: light;
+
+    color: #FFFFFF;
+
+    margin-bottom: 40px;
+}
+
+.newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.newsletter-form input {
+    height: 44px;
+
+    border: none;
+    border-radius: 4px;
+
+    padding: 10px 16px;
+    gap: 10px
+}
+
+.newsletter-form input::placeholder {
+  font-size: 16px;
+  color: #0B0A0899;
+}
+
+.newsletter-form button {
+    height: 44px;
+
+    border: none;
+    border-radius: 8px;
+
+    background: #E1EAF0;
+
+    font-size: 16px;
+    font-weight: 400;
+    text-align: center;
+
+}
+
+
 
 
 
@@ -490,6 +581,26 @@ body {
         font-size: 20px;
     }
 
+
+    /* NEWSLETTER */
+
+
+    .newsletter-section {
+        padding: 30px 20px 60px 20px;
+    }
+
+    .newsletter-logo {
+        font-size: 48px;
+        margin-left: 20px;
+    }
+
+    .newsletter-title {
+        font-size: 24px;
+    }
+
+    .newsletter-text {
+        font-size: 16px;
+    }
 
 
 }
