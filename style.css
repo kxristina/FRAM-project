@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-
 }
 body {
     font-family: "Arimo", sans-serif;
@@ -54,6 +53,8 @@ body {
 
     font-size: 14px;
 }
+
+/* INTRO PAGE */
 
 .intro {
     height: calc(100vh - 68px);
@@ -109,6 +110,81 @@ body {
 }
 
 
+/* SELECTION PAGE */
+
+
+.selection-container {
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: stretch;
+
+    min-height: 100vh;
+}
+
+.card {
+    flex: 1;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    padding: 80px 50px;
+    text-align: center;
+}
+
+.card:first-child {
+    border-right: 1px solid #0B0A08;
+}
+
+.card h3 {
+    font-size: 36px;
+    text-transform: uppercase;
+    font-weight: 400;
+
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    margin-bottom: 50px;
+}
+
+.card p {
+    font-family: "Frank Ruhl Libre", serif;
+    font-weight: 300;
+    font-style: light;
+    font-size: 20px;
+}
+
+.description {
+    max-width: 500px;
+    margin: 40px 0;
+}
+
+.card img {
+    width: 100%;
+    max-width: 500px;
+
+    height: 350px;
+
+    object-fit: cover;
+    border-radius: 16px;
+}
+
+.card button {
+    width: 320px;
+    height: 44px;
+
+    background: #DC4131;
+    color: #FFFFFF;
+
+    font-size: 16px;
+
+    border: none;
+    border-radius: 8px;
+}
+
+
 /*.    MOBILE.    */
 
 @media (max-width: 768px) {
@@ -128,5 +204,38 @@ body {
         height: 250px;
         width: 1px;
     }
+
+    /* SELECTION PAGE */
+
+    .selection-container {
+        flex-direction: column;
+    }
+
+    .card:first-child {
+        border-right: none;
+        border-bottom: 1px solid #0B0A08;
+    }
+
+    .card {
+        padding: 60px 15px;
+    }
+
+    .card h3 {
+        font-size: 24px;
+    }
+
+    .card p {
+        font-size: 16px;
+    }
+
+    .card button {
+        max-width: 330px;
+    }
+
+    .card img {
+        height: 250px;
+    }
+
+
 
 }
