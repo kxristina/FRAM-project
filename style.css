@@ -645,6 +645,48 @@ body {
     width: 455px;
 }
 
+/* PARTNERING FARMS */
+
+.partnering-farms {
+    box-sizing:border-box;
+    border-top: 1px solid #0B0A08;
+
+    display:flex;
+    min-height:100vh;
+  
+}
+
+.farms-text {
+  flex:1;
+  display:flex;
+  justify-content: center;
+  align-items: center;
+
+  border-right: 1px solid #0B0A08;
+}
+
+.farms-text h3 {
+    font-size: 36px;
+    font-weight: 400;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.farms-map{
+  flex: 2;
+  display: flex;
+  justify-content:center;
+  align-items:center;
+}
+
+#map {
+    width: 100%;
+    max-width: 745px;
+    height: 478px;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
 
 
 @media (max-width: 768px) {
@@ -678,5 +720,40 @@ body {
             max-height: 279px;
 
     }
+
+
+    /* PARTNERING FARMS */
+
+
+
+    .partnering-farms {
+    flex-direction:column;
+  }
+
+  .farms-text{
+    border-right:none;
+    border-bottom:1px solid #222;
+    padding: 40px 20px;
+  }
+
+  .farms-text h3 {
+    font-size: 24px;
+    max-width: 304px;
+  }
+
+  #map {
+    max-width: 340px;
+    height: 459px;
+
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.farms-map {
+    padding: 25px;
+}
+  
+
+
 
 }
