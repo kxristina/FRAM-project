@@ -33,27 +33,50 @@ productsBtn.addEventListener("click", function() {
 
 
 
-function initMap() {
 
-    const farmLocation = {
-        lat: 60.304,
-        lng: 10.636
-    };
 
-    const map = new google.maps.Map(
-        document.getElementById("map"),
-        {
-            zoom: 11,
-            center: farmLocation,
-            mapTypeControl: false,
-            streetViewControl: false,
-            fullscreenControl: false
-        }
-    );
+async function getFarmData() {
+    const response = await fetch("/data/farm.json");
 
-    new google.maps.Marker({
-        position: farmLocation,
-        map: map,
-        title: "Braastad Gaard"
-    });
+    if (!response.ok) {
+        throw new Error("Could not load farm data");
+    }
+
+    return response.json();
 }
+
+async function initMap() {
+    try {
+
+        const farm = await getFarmData();
+
+        const farmLocation = {
+            lat: farm.lat,
+            lng: farm.lng
+        };
+
+        const map = new google.maps.Map(
+            document.getElementById("map"),
+            {
+                zoom: 11,
+                center: farmLocation,
+                mapTypeControl: false,
+                streetViewControl: false,
+                fullscreenControl: false
+            }
+        );
+
+        new google.maps.Marker({
+            position: farmLocation,
+            map: map,
+            title: farm.name
+        });
+
+    } catch (error) {
+        console.error(error);
+    }
+}
+
+
+
+
