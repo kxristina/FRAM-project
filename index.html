@@ -16,13 +16,13 @@
     <header>
         <nav class="nav-bar">
             
-            <button class="menu-btn">
+            <button id="menuBtn" class="menu-btn">
                 ☰
             </button>
 
             <h1 class="logo">FRAM</h1>
 
-            <button class="cart-btn">
+            <button id="cartBtn" class="cart-btn">
                 0
             </button>
 
@@ -30,8 +30,32 @@
 
     </header>
 
-    <main>
+    <!-- POP OVER MENU -->
 
+    <nav id="sideMenu" class="menu">
+
+        <button id="closeBtn" class="close-btn">
+            ✕
+        </button>
+
+    
+        <div class="menu-content">
+
+            <a id="products-link" href="#">Products</a>
+            <a id="chat-link" href="#">Chat</a>
+
+        </div>
+
+        <div class="menu-checkout">
+
+            <a id="checkout-link" href="#">Checkout</a>
+
+        </div>
+
+    </nav>
+
+
+    <main>
 
          <!-- FRAM -->
 
@@ -70,7 +94,7 @@
 
                 <p class="description">New produce is added continuously as time goes by and the seasons change.</p>
 
-                <button>Browse our selection</button>
+                <button id="products-btn">Browse our selection</button>
 
             </div>
 
@@ -86,7 +110,7 @@
 
                 <p class="description">New produce is added continuously as time goes by and the seasons change.</p>
 
-                <button>Go to chat</button>
+                <button id="chat-btn">Go to chat</button>
 
             </div>
 
@@ -298,6 +322,8 @@
         </div>
 
     </footer>
+
+    <script src="script.js"></script>
 
 </body>
 
